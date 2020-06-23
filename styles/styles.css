@@ -1,0 +1,469 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    background: #f5f5f6;
+}
+
+body {
+    padding-top: 64px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 3;
+
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background: #242329;
+}
+
+header .search-container {
+    height: 50%;
+    width: 30%;
+    min-width: 210px;
+    margin-left: 8px;
+
+    display: flex;
+    align-items: center;
+}
+
+.search-container label {
+    height: 100%;
+    width: 15%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container label:hover {
+    cursor: pointer;
+}
+
+.search-container label img {
+    width: 70%;
+    height: 70%;
+}
+
+header .search-container input[type=text] {
+    position: relative;
+    height: 100%;
+    width: 80%;
+    max-width: 220px;
+
+    margin-left: 8px;
+    border-radius: 4px;
+    border: none;
+}
+
+header nav {
+    margin-right: 40px;
+}
+
+header nav ul {
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 8px;
+}
+
+header nav a {
+    font-size: 1.8rem;
+    color: grey;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: 8px;
+}
+
+section .popular-container {
+    position: relative;
+    width: 100%; 
+    height: 60vh;
+
+    max-width: 760px;
+    min-width: 272px;
+    margin: 0 auto;  
+    margin-top: 24px; 
+}
+
+section .popular-container a {
+    color: whitesmoke;
+    transition: 0.4s;
+}
+
+.popular-container .popular-button {
+    position: absolute;
+    z-index: 2;
+    right: 2%;
+    top: 5%;
+}
+
+.popular-container .popular-button button {
+    background-color: rgba(0, 0, 0, 0);
+    width: 10vw;
+    height: 10vh;
+    max-width: 40px;
+    max-height: 40px;
+    color: whitesmoke;
+    font-weight: bolder;
+    border: none;
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.popular-container .popular-button button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+section .popular-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+section .popular-container .content {
+    position: absolute;
+    z-index: 1;
+    bottom: 0;
+    width: 100%;
+    padding: 16px;
+    background-image: linear-gradient(rgba(0,0,0,0), black);
+}
+
+section .popular-container .content p {
+    font-size: 1.4rem;   
+}
+
+.nerd-culture {
+    font-size: 4.4rem;
+}
+
+main {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 980px;
+}
+
+main h2 {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+
+    max-width: 980px;
+}
+
+.recent,
+.this-month,
+.last-month {
+    margin: 64px 0;
+}
+
+/* News Container */
+
+.picture {
+    width: 100%;
+    height: 100%;
+    padding-top: 56.25%; /* 16:9 */
+
+    box-shadow: 2px 2px 8px black;
+    overflow: hidden;
+    position: relative;
+}
+
+.picture img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.picture .text-content {
+    position: absolute;
+    width: 100%;
+    
+    background-image: linear-gradient(rgba(0, 0, 0, 0), black);
+
+    color: white;
+    bottom: 0;
+}
+
+.news li:hover img {
+    filter: blur(1.5px);
+}
+
+
+/* RECENTES */
+
+main .recent {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .recent .news-container {
+    width: 100%;
+    display: flex;
+    list-style: none;
+    padding: 0 16px;
+}
+
+main .recent .new {
+    position: relative;
+    width: 90%;
+    min-width: 160px;
+    height: 320px;
+    margin: 6px;
+}
+
+main .recent .new:hover {
+    transform: translateY(-9px);
+}
+
+main .recent .text-content {
+    height: 50%;
+    padding: 0 12px;
+    padding-top: 16px;
+    max-height: 160px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main .recent .text-content h3 {
+    max-height: 36px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 4px;
+    border-bottom: 2px solid whitesmoke;
+    overflow: hidden;
+}
+
+main .recent .text-content p {
+    font-size: 1.2rem;
+}
+
+/* ESTE MÊS */
+
+main .this-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .this-month .news-container {
+    position: relative;
+    width: 100%;
+    list-style: none;
+
+    display: grid;
+    grid-template-columns: repeat(3, minmax(170px,260px));
+}
+
+main .this-month .new {
+    height: 250px;
+    margin: 6px;
+}
+
+main .this-month .text-content {
+    height: auto;
+    padding: 16px;
+}
+
+main .this-month .text-content h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    border-bottom: 2px solid whitesmoke;
+}
+
+main .this-month .text-content p {
+    font-size: 1.2rem;
+}
+
+main .this-month .text-content .on {
+    display: initial;
+    height: 100px;
+}
+
+main .this-month li:hover {
+    position: relative;
+    transform: translateY(-9px);
+    z-index: 2;
+}
+
+/* MÊS PASSADO */
+
+main .last-month {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .last-month .news-container {
+    position: relative;
+    width: 100%;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main .last-month .new {
+    width: 90%;
+    min-width: 180px;
+    max-width: 210px;
+    height: 160px;
+    margin: 8px;
+}
+
+main .last-month .text-content {
+    height: auto;
+    max-height: 100%;
+    padding: 16px;
+}
+
+main .last-month .text-content h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 2px solid whitesmoke;
+}
+
+main .last-month .text-content p {
+    font-size: 1rem;
+    display: none;
+}
+
+main .last-month .text-content .on {
+    display: initial;
+}
+
+main li {
+    transition: 0.5s;
+}
+
+main .last-month li:hover {
+    position: relative;
+    transform: scale(1, 1.4);
+    z-index: 2;
+}
+
+main .news button {
+    width: 40%;
+    height: 32px;
+    margin: 8px;
+    border: none;
+    border-radius: 4px;
+    background: #3f3e44;
+    color: whitesmoke;
+    transition: 0.3s;
+}
+
+main .news button[type=button]:hover {
+    cursor: pointer;
+    background-color: #242329;
+}
+
+/* MEDIAS */
+
+footer h3 {
+    color: whitesmoke;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.medias {
+    background-color: #242329;
+    padding-top: 16px;
+}
+
+.medias ul {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+
+    margin-bottom: 16px;
+}
+
+footer .media a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    
+}
+
+footer .media img {
+    width: 30%;
+    box-shadow: 1px 1px 6px black;
+}
+
+.medias .subscribe {
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: whitesmoke;
+    text-align: center;
+
+    border-top: 2px solid whitesmoke;
+    padding: 16px 0;
+}
+
+.medias .subscribe button {
+    border: none;
+    border-radius: 4px;
+    box-shadow: 1px 1px 6px black;
+
+    width: 40%;
+    min-width: 124px;
+    height: 32px;
+
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #242329;
+    background-color: whitesmoke;
+
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.medias .subscribe button:hover {
+    background-image: linear-gradient(rgba(245, 118, 0, 0.5), rgb(255, 115, 0));
+}

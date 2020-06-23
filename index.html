@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" media="(max-width: 776px)" href="./styles/responsive.css">
+
+    <title>NerdCulture</title>
+</head>
+<body>
+
+    <!-- ESTILIZAR AS SCROLL BAR -->
+    <header>
+        <div class="search-container">
+            <label for="search">
+                <img src="assets/search.svg" id="search-img" alt="Pesquisar" title="Pesquisar">
+            </label>
+            <input type="text" name="search" id="search">
+        </div>
+
+        <section>
+            <nav>
+                <div class="toggle-menu">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+
+                <ul class="menu">
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Animes</a></li>
+                    <li><a href="#">Séries</a></li>
+                    <li><a href="#">Resenhas</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header>
+
+    <main>
+        <h1 class="nerd-culture">Nerd Culture</h1>
+
+    <section>
+        <div class="popular-container">
+            <a href="#">
+                <div class="popular-button">
+                    <button type="button" id="back"> < </button>
+                    <button type="button" id="next"> > </button>
+                </div>
+                <img src="" alt="">
+
+                <div class="content">         
+                    <h3 class="title"></h3>
+                    <p class="description"></p>                 
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="news">
+        <section class="recent">
+            <h2>Recentes</h2>
+            <ul class="news-container">
+            </ul>
+
+            <button type="button">Mais</button>
+        </section>
+
+        <section class="this-month">
+            <h2>Este Mês</h2>
+            <ul class="news-container">
+            </ul>
+
+            <button type="button">Mais</button>
+        </section>
+
+        <section class="last-month">
+            <h2>Último Mês</h2>
+            <ul class="news-container">
+            </ul>
+            
+            <button type="button">Mais</button>
+        </section>
+    </section>
+    </main>
+
+    <footer class="medias">
+        <h3>Nos siga nas redes sociais!</h3>
+
+        <ul>
+            <li class="media">
+                <a href="#">
+                    <img src="assets/facebook-icon.png" alt="Nosso Facebook">
+                    <span>Facebook</span>
+                </a>
+            </li>
+            <li class="media">
+                <a href="#">
+                    <img src="assets/instagram-icon.png" alt="Nosso Instagram">
+                    <span>Instagram</span>
+                </a>
+            </li>
+            <li class="media">
+                <a href="#">
+                    <img src="assets/twitter-icon.png" alt="Nosso Twitter">
+                    <span>Twitter</span>
+                </a>
+            </li>
+            <li class="media">
+                <a href="#">
+                    <img src="assets/youtube-icon.png" alt="Nosso Youtube">
+                    <span>Youtube</span>
+                </a>
+            </li>
+        </ul>
+
+        <div class="subscribe">
+            <p>Gostou do nosso conteúdo? <br> Se registre no nosso site e nos inspire a postar cada vez mais conteúdo!</p>
+            <button type="button">Registrar-se</button>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <script src="slider.js"></script>
+</body>
+</html>
