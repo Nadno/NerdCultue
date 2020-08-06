@@ -1,12 +1,11 @@
-# NerdCultue
+<h1 align="center">NerdCultue</h1>
 Uma página web feita para o aprendizado de responsividade no CSS3
 
 ## A página possui um header básico, um slider de imagens, uma grade de notícias com CSS GRID, e um footer simples
 ![](Web.gif)
 
-<h1 align="center">IPad</h1>
-<h1 align="center">![Ipad Gif](Ipad.gif)</h1>
 
+<h2 align="center"><img src="Ipad.gif"></h2>
 
-### Moto G4
-![](MotoG4.gif)
+<h2 align="center">Moto G4</h2>
+<h2 align="center"><img src="MotoG4.gif"></h2>
